@@ -64,27 +64,27 @@ li.item3::before{
 }
 
 li.item4::before{
-    background: url('../img/message.png');
+    background: url('../img/history.png');
 }
 
 li.item5::before{
-    background: url('../img/message.png');
+    background: url('../img/tasks.png');
 }
 
 li.item6::before{
-    background: url('../img/message.png');
+    background: url('../img/community.png');
 }
 
 li.item7::before{
-    background: url('../img/message.png');
+    background: url('../img/settings.png');
 }
 
 li.item8::before{
-    background: url('../img/message.png');
+    background: url('../img/support.png');
 }
 
 li.item9::before{
-    background: url('../img/message.png');
+    background: url('../img/privacy.png');
 }
 
 
