@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
-    font-size: calc(14px + (21 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
 
     --sidebar-padding-left: calc(100% - 205px);
 }
@@ -142,9 +142,34 @@ div.container > div.header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    overflow: hidden;
 }
 
+div.search-div{
+    display: flex;
+    column-gap: 5px;
+    height: 35px;
+}
+button#search-button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+} 
 
+button#search-button:focus{
+    border: none;
+}
+
+button#search-button:active{
+    transform: translateY(1px);
+}
+
+input[type=search]{
+    border: none;
+    border-radius: 10px;
+    background-color: gainsboro;
+    padding: 3px;
+}
 
 
 /*-------------HEADER------------*/
