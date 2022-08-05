@@ -140,37 +140,53 @@ div.title > div{
 div.container > div.header{
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:  0.4fr 1fr;
     overflow: hidden;
+    padding: 10px;
 }
 
 div.search-div{
-    display: flex;
-    column-gap: 5px;
-    height: 35px;
+    display: grid;
+    grid-template-columns: 0.1fr 2fr;
+    padding: 10px;
 }
-button#search-button{
+button#search-button,
+button#noti-icon{
     border: none;
     background-color: transparent;
     outline: none;
 } 
-
-button#search-button:focus{
+button#search-button:focus,
+button#noti-icon:focus{
     border: none;
 }
-
-button#search-button:active{
+button#search-button:active,
+button#noti-icon:active{
     transform: translateY(1px);
 }
 
 input[type=search]{
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: gainsboro;
     padding: 3px;
 }
 
+div.user-noti{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 30px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+img#user-pic{
+    width: auto;
+    height: 50px;
+    border-radius: 50%;
+}
 
 /*-------------HEADER------------*/
 
