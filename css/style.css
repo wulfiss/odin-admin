@@ -148,7 +148,7 @@ div.container > div.header{
 
 div.search-div{
     display: grid;
-    grid-template-columns: 0.1fr 2fr;
+    grid-template-columns: repeat(15, 1fr);
     padding: 10px;
 }
 button#search-button,
@@ -158,11 +158,13 @@ button#noti-icon{
     outline: none;
 } 
 button#search-button:focus,
-button#noti-icon:focus{
+button#noti-icon:focus,
+div.button-header > button:focus{
     border: none;
 }
 button#search-button:active,
-button#noti-icon:active{
+button#noti-icon:active,
+div.button-header > button:active{
     transform: translateY(1px);
 }
 
@@ -171,6 +173,7 @@ input[type=search]{
     border-radius: 30px;
     background-color: gainsboro;
     padding: 3px;
+    grid-column: 2 / 16;
 }
 
 div.user-noti{
@@ -200,6 +203,7 @@ div#user-header-two{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     align-content: center;
+    padding-top: 20px;
 }
 
 div.greet{
@@ -207,6 +211,22 @@ div.greet{
     align-self: center;
 }
 
+div.button-header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 20px;
+    gap: 10px;
+}
+
+div.button-header > button{
+    height: 50px;
+    width: 130px;
+    column-gap: 30px;
+    align-self: center;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
 
 /*-------------HEADER------------*/
 
