@@ -1,92 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <title>Dashboard</title>
-</head>
-<body>
-    <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <title>Dashboard</title>
+    </head>
 
-        <div class="header">
-            <div class="search-div">
-                <button type="button" id="search-button"><img src="./img/magnify.png" alt="Search"></button>
-                <input type="search" name="search-bar" id="search-bar">
-            </div>
-            <div class="user-noti">
-                <button type="button" id="noti-icon"><img id="noti-icon" src="./img/bell-ring.png" alt="notification icon"></button>
-                <img id="user-pic" src="./img/profilepic.jpg" alt="user profile picture" sizes="30px"></img>
-                <div id="user-header">Wulff Julian</div>
-            </div>
-            <div id="user-header-two">
-                <img id="user-pic-two" src="./img/profilepic.jpg" alt="User profile picture">
-                <div class="greet">
-                    <p>Hi there,</p>
-                    <h3>Wulff Julian (@Wulfis)</h3>
-                </div>
-            </div>
-            <div class="button-header">
-                <button type="button" id="new">New</button>
-                <button type="button" id="Upload">Upload</button>
-                <button type="button" id="Share">Share</button>
-            </div>
-        </div>
+    <body>
+        <div class="container">
 
-        <div class="sidebar">
-            <div class="title">
-                <img src="./img/title.png" alt="Title">
-                <p>Dashboard<p>
-            </div>
-            <ul class="sidebar socialmedia">
-                <li class="item1"><p>Home</p></li>
-                <li class="item2"><p>Profile</p></li>
-                <li class="item3"><p>Messages</p></li>
-                <li class="item4"><p>History</p></li>
-                <li class="item5"><p>Tasks</p></li>
-                <li class="item6"><p>Communities</p></li>
-            </ul>
-            <ul class="sidebar settings">
-                <li class="item7"><p>Settings</p></li>
-                <li class="item8"><p>Support</p></li>
-                <li class="item9"><p>Privacy</p></li>
-                <li class="item10">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <object class="icon-item10" type="image/svg+xml" data="./img/ab-testing.svg"></object>
-                        Test
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <header>
+                <div class="primary-header">
+                    <form action="">
+                        <button type="button" class="onlybtn"><img class="svg-icons svg-color-100" src="./img/magnify.svg"></img></button>
+                        <input type="search" name="searchbar" id="search-bar">
+                    </form>
+                    <div id="notification">
+                        <button type="button" class="onlybtn"><img class="svg-icons svg-color-100" src="./img/bell-ring.svg"></img></button>
+                    </div>
+                    <div class="profile-one">
+                        <img class="sz-pic-100" src="./img/profilepic.jpg" alt="user profile picture"></img>
+                        <h4 class="fs-heading">Julian W. Wulff</h4>
+                    </div>
+                </div>
 
-        <div class="main">
-            <div class="sides">
-                <div class="side one">
-                    <h2 class="text announce">Announcements</h2>
-                    <div class="announces-card"></div>
+                <div class="secondary-header">
+                    <div class="greetings">
+                        <div class="img">
+                            <img class="sz-pic-300" src="./img/profilepic.jpg" alt="user profile picture"></img>
+                        </div>        
+                        <div class="h4">
+                            <h4>Hi there,</h4>
+                        </div>
+                        <div class="h2">
+                            <h2>Julian W. Wulff (@Wulfis)</h2>
+                        </div>
+                    </div>
+                    <div class="btn-header">
+                        <button type="button" id="new">New</button>
+                        <button type="button" id="Upload">Upload</button>
+                        <button type="button" id="Share">Share</button>
+                    </div>
                 </div>
-                <div class="side two">
-                    <h2 class="text trend">Trending</h2>
-                    <div class="trending-card"></div>
+            </header>
+
+            <nav>
+                <ul class="primary-sidebar">
+                    <li><a href="#home" class="title-li"><img class="svg-title svg-color-200" src="./img/trash-can.svg"></img><h4 class="disappear">Dashboard</h4></a></li>
+                    <li><a class="active" href="#home"><img class="svg-icons" src="./img/home.svg"></img><h4 class="disappear">Home</h4></a></li>
+                    <li><a href="#profile"><img class="svg-icons svg-color-200" src="./img/profile.svg"></img><h4 class="disappear">Profile</h4></a></li>
+                    <li><a href="#messages"><img class="svg-icons svg-color-200" src="./img/message.svg"></img><h4 class="disappear">Messages</h4></a></li>
+                    <li><a href="#history"><img class="svg-icons svg-color-200" src="./img/history.svg"></img><h4 class="disappear">History</h4></a></li>
+                    <li><a href="#tasks"><img class="svg-icons svg-color-200" src="./img/tasks.svg"></img><h4 class="disappear">Tasks</h4></a></li>
+                    <li><a href="#communities"><img class="svg-icons svg-color-200" src="./img/community.svg"></img><h4 class="disappear">Communities</h4></a></li>
+                </ul>
+                <ul class="secondary-sidebar">
+                    <li><a href="#settings"><img class="svg-icons svg-color-200" src="./img/settings.svg"></img><h4 class="disappear">Settings</h4></a></li>
+                    <li><a href="#support"><img class="svg-icons svg-color-200" src="./img/support.svg"></img><h4 class="disappear">Support</h4></a></li>
+                    <li><a href="#privacy"><img class="svg-icons svg-color-200" src="./img/privacy.svg"></img><h4 class="disappear">Privacy</h4></a></li>
+                </ul>   
+            </nav>
+
+            <main>
+                <div class="projects-cards">
+                    <h2>Your Projects</h2>
+                    <div class="cards">
+                        <a href="#"><h4>Super Cool Project</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Duis non dictum urna, sit amet sodales erat. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <ul class="link-Cards">
+                            <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
+                            <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
+                            <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <a href="#"><h4>Super Cool Project</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Duis non dictum urna, sit amet sodales erat. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <ul class="link-Cards">
+                            <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
+                            <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
+                            <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <a href="#"><h4>Super Cool Project</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Duis non dictum urna, sit amet sodales erat. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <ul class="link-Cards">
+                            <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
+                            <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
+                            <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <a href="#"><h4>Super Cool Project</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Duis non dictum urna, sit amet sodales erat. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <ul class="link-Cards">
+                            <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
+                            <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
+                            <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <a href="#"><h4>Super Cool Project</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Duis non dictum urna, sit amet sodales erat. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <ul class="link-Cards">
+                            <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
+                            <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
+                            <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <a href="#"><h4>Super Cool Project</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Duis non dictum urna, sit amet sodales erat. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <ul class="link-Cards">
+                            <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
+                            <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
+                            <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <h2 class="text-project">Your Projects</h2>
-            <div class="project-cards">
-                <div class="cards one"></div>
-                <div class="cards two"></div>
-                <div class="cards three"></div>
-                <div class="cards four"></div>
-                <div class="cards five"></div>
-                <div class="cards six"></div>
-            </div>    
+                <div class="announces-card">
+                    <h2>Announcements</h2>
+                    <div class="an-cards">
+                        <h4>Site Maintenance</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Duis non dictum urna, sit amet sodales erat.</p>
+                    </div>
+                    <div class="an-cards">
+                        <h4>Community Share Day</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Duis non dictum urna, sit amet sodales erat.</p>
+                    </div>
+                    <div class="an-cards">
+                        <h4>Updated Privacy Policy</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Duis non dictum urna, sit amet sodales erat.</p>
+                    </div>
+                </div>
+
+                <div class="trending-card">
+                    <h2>Trending</h2>
+                    <div class="tren-cards">
+                        <img class="sz-pic-100" src="./img/profilepic.jpg" alt="user profile picture"></img>
+                        <h5 class="fs-heading">@Wulfis</h5>
+                        <p>Mysterious man</p>
+                    </div>
+                    <div class="tren-cards">
+                        <img class="sz-pic-100" src="./img/profilepic.jpg" alt="user profile picture"></img>
+                        <h5 class="fs-heading">@Wulfis</h5>
+                        <p>Mysterious man</p>
+                    </div>
+                    <div class="tren-cards">
+                        <img class="sz-pic-100" src="./img/profilepic.jpg" alt="user profile picture"></img>
+                        <h5 class="fs-heading">@Wulfis</h5>
+                        <p>Mysterious man</p>
+                    </div>
+                    <div class="tren-cards">
+                        <img class="sz-pic-100" src="./img/profilepic.jpg" alt="user profile picture"></img>
+                        <h5 class="fs-heading">@Wulfis</h5>
+                        <p>Mysterious man</p>
+                    </div>
+                </div>
+            </main>
+
         </div>
-    </div>
-    
-</body>
+        
+    </body>
 </html>
-
-<nav>
-    
-</nav>
