@@ -322,7 +322,12 @@ li{
         display: none;
     }
     .container{
-        grid-template-rows: 5% 90%;
+        grid-template-rows: 6% 90%;
+    }
+
+    .primary-header{
+        grid-template-columns: 70% 10% 15%;
+        gap: 5px;
     }
 
     .secondary-header{
@@ -330,7 +335,7 @@ li{
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
-        width: 90%;
+        width: 100%;
         height: 50%;
     }
 
