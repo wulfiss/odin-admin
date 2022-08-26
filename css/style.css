@@ -25,8 +25,11 @@
 
 html{
     margin-inline: auto;
-    overflow-y: scroll;
     font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
 }
 
 .svg-color-100{
@@ -67,10 +70,11 @@ html{
 }
 
 .container{
+    height: 100%;
     font-size: 1.6rem;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 15% 85%;
     margin-inline: auto;
     max-width: min(1350px, 100%);
     padding-inline: 0.5rem;
@@ -79,8 +83,8 @@ html{
 /*-----------Header----------*/
 header{
     grid-area: 1 / 2 / 2 / 3;
-    position: sticky;
-    top: 0;
+    position: sticky !important;
+    top: 0 !important;
     display: grid;
     grid-template-rows: 30% 70%;
     background-color: burlywood;
@@ -252,16 +256,58 @@ ul.secondary-sidebar li a{
 
 /*-------------sidebar----------*/
 
+/*-------------MAIN------------*/
 
 main{
+    width: 100%;
+    height: 95%;
     grid-area: 2 / 2 / 3 / 3;
+    display: grid !important;
+    grid-template-columns: 70% 25%;
+    grid-template-rows: 1fr;
 }
 
 li{
     list-style-type: none;
 }
 
+h2.cards-title{
+    margin: 10px;
+}
 
+h2.cards-width{
+    width: 70%;
+}
+
+div.projects-cards{
+    width: 100%;
+    grid-area: 1 / 1 / 3 / 2;
+    margin-inline: auto;
+}
+
+div.cards-desk-one{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+    gap: 10px;
+}
+
+div.cards{
+    border: 1px solid red;
+    border-radius: 10px;
+    border-left: 10px solid red;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+
+div.an-cards,
+div.tren-cards{
+    border: 1px solid red;
+    width: 250px;
+}
+/*-------------MAIN------------*/
 
 @media screen and (max-width: 980px){
     .disappear{
@@ -279,7 +325,7 @@ li{
     .container{
         display: grid;
         grid-template-columns: minmax(50px, 5%) 95%;
-        grid-template-rows: 10% 90%;
+        grid-template-rows: 15% 85%;
         margin-inline: auto;
         max-width: min(1250px, 100%);
         padding-inline: 0.1rem;
@@ -317,12 +363,51 @@ li{
     }
 }
 
-@media screen and (max-width: 710px){
+@media screen and (max-width: 1180px){
+    main{
+        height: 145vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, minmax(0, 100%));
+        overflow-y: auto;
+        margin-left: -10px;
+    }
+
+    div.sidecards{
+        grid-area: 2 / 1 / 3 / 2;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: minmax(0, 50%) minmax(0, 50%);
+    }
+
+    div.cards-desk-one{
+        justify-items: center;
+        column-gap: 0;
+    }
+
+    div.anoncards{
+        display: grid;
+        justify-items: center;
+    }
+
+    h2.cards-width{
+        width: 100%;
+        text-align: center;
+    }
+
+    div.an-cards,
+    div.tren-cards{
+    margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 730px){
     .header-disappear{
         display: none;
     }
     .container{
-        grid-template-rows: 6% 90%;
+        grid-template-rows: 5% 95%;
+        height: auto;
     }
 
     .primary-header{
@@ -348,9 +433,27 @@ li{
 
     header{
         width: 90%;
+        height: 100%;
     }
 
     main{
+        grid-template-rows: 63% 37%;
         width: 90%;
+        height: 2100px;
+        margin-left: 0px;
     }
+
+    div.cards-desk-one{
+        width: 90%;
+        grid-template-columns: 1fr;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    div.sidecards{
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 50%);
+    }
+
 }
