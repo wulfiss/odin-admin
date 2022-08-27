@@ -29,7 +29,7 @@ html{
 }
 
 body{
-    height: 100vh;
+    height: 1600px;
 }
 
 .svg-color-100{
@@ -74,7 +74,7 @@ body{
     font-size: 1.6rem;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 10% 85%;
     margin-inline: auto;
     max-width: min(1350px, 100%);
     padding-inline: 0.5rem;
@@ -176,9 +176,6 @@ div.h4 > h4{
     margin: 1.5rem auto auto auto;
 }
 
-div.h2 > h2{
-    
-}
 
 div.greetings div.h2{
     grid-area: 2 / 2 / 3 / 3;
@@ -265,6 +262,7 @@ main{
     display: grid !important;
     grid-template-columns: 70% 25%;
     grid-template-rows: 1fr;
+    box-sizing: border-box;
 }
 
 li{
@@ -325,7 +323,7 @@ div.tren-cards{
     .container{
         display: grid;
         grid-template-columns: minmax(50px, 5%) 95%;
-        grid-template-rows: 15% 85%;
+        grid-template-rows: 10% 85%;
         margin-inline: auto;
         max-width: min(1250px, 100%);
         padding-inline: 0.1rem;
@@ -365,11 +363,12 @@ div.tren-cards{
 
 @media screen and (max-width: 1180px){
     main{
-        height: 145vh;
+        height: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, minmax(0, 100%));
         overflow-y: auto;
-        margin-left: -10px;
+        /*margin-left: -10px;*/
+        padding-inline: var(--padding-400);
     }
 
     div.sidecards{
