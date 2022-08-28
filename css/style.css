@@ -309,17 +309,42 @@ ul.link-Cards{
     column-gap: 10px;
     justify-self: flex-end;
 }
-div.an-cards,
-div.tren-cards{
-    border: 1px solid red;
-    width: 250px;
+
+div.an-cards{
+    padding: 10px;
 }
 
-div.TA-cards{
+div.an-cards:not(.an-cards:nth-child(3n)){
+    border-bottom: 1px solid red;
+}
+
+div.A-cards{
     border: 1px solid black;
     border-radius: 10px;
     width: 270px;
-    height: 320px;
+    height: 360px;
+    padding: 10px 20px 10px 20px;
+    margin-inline: auto;
+}
+
+div.T-cards{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 270px;
+    height: 360px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+div.tren-cards{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    column-gap: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 /*-------------MAIN------------*/
 
@@ -383,7 +408,6 @@ div.TA-cards{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, minmax(0, 100%));
         overflow-y: auto;
-        /*margin-left: -10px;*/
         padding-inline: var(--padding-400);
     }
 
@@ -408,11 +432,6 @@ div.TA-cards{
     h2.cards-width{
         width: 100%;
         text-align: center;
-    }
-
-    div.an-cards,
-    div.tren-cards{
-    margin-left: 10px;
     }
 }
 
