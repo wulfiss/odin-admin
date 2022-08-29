@@ -29,7 +29,7 @@ html{
 }
 
 body{
-    height: 1600px;
+    height: 980px;
 }
 
 .svg-color-100{
@@ -74,7 +74,7 @@ body{
     font-size: 1.6rem;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 10% 85%;
+    grid-template-rows: 15% 85%;
     margin-inline: auto;
     max-width: min(1350px, 100%);
     padding-inline: 0.5rem;
@@ -210,7 +210,6 @@ nav{
     height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 1;
     padding: auto;
     display: flex;
@@ -289,15 +288,15 @@ div.cards-desk-one{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 10px;
-    gap: 10px;
+    gap: 15px;
 }
 
 div.cards{
     border: 1px solid red;
     border-radius: 10px;
     border-left: 10px solid red;
-    width: 300px;
-    height: 200px;
+    width: 280px;
+    height: 245px;
     padding: 10px;
     display: grid;
     grid-template-rows: 15% 70% 15%;
@@ -403,10 +402,18 @@ div.tren-cards{
 }
 
 @media screen and (max-width: 1180px){
+    body{
+        height: 1500px;
+    }
+
+    .container{
+        grid-template-rows: 10% 85%;
+    }
+
     main{
         height: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, minmax(0, 100%));
+        grid-template-rows: minmax(0, 65%) minmax(0, 35%);
         overflow-y: auto;
         padding-inline: var(--padding-400);
     }
@@ -439,8 +446,13 @@ div.tren-cards{
     .header-disappear{
         display: none;
     }
+
+    body{
+        height: auto;
+    }
+
     .container{
-        grid-template-rows: 5% 95%;
+        grid-template-rows: 3.5% 96.5%;
         height: auto;
     }
 
@@ -471,23 +483,29 @@ div.tren-cards{
     }
 
     main{
-        grid-template-rows: 63% 37%;
+        grid-template-rows: 65% 35%;
         width: 90%;
-        height: 2100px;
-        margin-left: 0px;
+        height: 2500px;
+        padding-inline: -10px;
+        margin-inline: -10px;
     }
 
     div.cards-desk-one{
         width: 90%;
         grid-template-columns: 1fr;
-        margin: 10px;
+        margin: auto;
         gap: 10px;
     }
 
     div.sidecards{
         width: 90%;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 50%);
+        grid-template-rows: minmax(0, 50%) minmax(0, 50%);
+        margin: auto;
+    }
+
+    nav{
+        left: 0;
     }
 
 }
