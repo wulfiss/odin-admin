@@ -9,17 +9,17 @@
         <title>Dashboard</title>
     </head>
 
-    <body>
+    <body class="bg-color-200">
         <div class="container">
 
-            <header>
+            <header class="bg-color-10 shadow-box">
                 <div class="primary-header">
                     <form action="">
-                        <button type="button" class="onlybtn"><img class="svg-icons svg-color-100" src="./img/magnify.svg"></img></button>
-                        <input type="search" name="searchbar" id="search-bar">
+                        <button type="button" class="onlybtn active-btn"><img class="svg-icons svg-color-100" src="./img/magnify.svg"></img></button>
+                        <input type="search" class="bg-color-50" name="searchbar" id="search-bar">
                     </form>
                     <div id="notification">
-                        <button type="button" class="onlybtn"><img class="svg-icons svg-color-100" src="./img/bell-ring.svg"></img></button>
+                        <button type="button" class="onlybtn active-btn"><img class="svg-icons svg-color-100" src="./img/bell-ring.svg"></img></button>
                     </div>
                     <div class="profile-one">
                         <img class="sz-pic-100" src="./img/profilepic.jpg" alt="user profile picture"></img>
@@ -40,98 +40,98 @@
                         </div>
                     </div>
                     <div class="btn-header">
-                        <button type="button" class="shared-btn" id="new">New</button>
-                        <button type="button" class="shared-btn" id="Upload">Upload</button>
-                        <button type="button" class="shared-btn" id="Share">Share</button>
+                        <button type="button" class="shared-btn active-btn bg-color-700" id="new">New</button>
+                        <button type="button" class="shared-btn active-btn bg-color-700" id="Upload">Upload</button>
+                        <button type="button" class="shared-btn active-btn bg-color-700" id="Share">Share</button>
                     </div>
                 </div>
             </header>
 
-            <nav>
+            <nav class="bg-color-700">
                 <ul class="primary-sidebar">
-                    <li class="first-home"><a href="#home" class="title-li"><img class="svg-title svg-color-200" src="./img/trash-can.svg"></img><h4 class="disappear fs-heading-primary">Dashboard</h4></a></li>
-                    <li><a class="active" href="#home"><img class="svg-icons" src="./img/home.svg"></img><h4 class="disappear fs-heading-secondary">Home</h4></a></li>
-                    <li><a href="#profile"><img class="svg-icons svg-color-200" src="./img/profile.svg"></img><h4 class="disappear fs-heading-secondary">Profile</h4></a></li>
-                    <li><a href="#messages"><img class="svg-icons svg-color-200" src="./img/message.svg"></img><h4 class="disappear fs-heading-secondary">Messages</h4></a></li>
-                    <li><a href="#history"><img class="svg-icons svg-color-200" src="./img/history.svg"></img><h4 class="disappear fs-heading-secondary">History</h4></a></li>
-                    <li><a href="#tasks"><img class="svg-icons svg-color-200" src="./img/tasks.svg"></img><h4 class="disappear fs-heading-secondary">Tasks</h4></a></li>
-                    <li><a href="#communities"><img class="svg-icons svg-color-200" src="./img/community.svg"></img><h4 class="disappear fs-heading-secondary">Communities</h4></a></li>
+                    <li class="first-home hover"><a href="#home" class="title-li"><img class="svg-title svg-color-200" src="./img/trash-can.svg"></img><h4 class="disappear fs-heading-primary">Dashboard</h4></a></li>
+                    <li class="hover"><a class="active" href="#home"><img class="svg-icons svg-color-200" src="./img/home.svg"></img><h4 class="disappear fs-heading-secondary">Home</h4></a></li>
+                    <li class="hover"><a href="#profile"><img class="svg-icons svg-color-200" src="./img/profile.svg"></img><h4 class="disappear fs-heading-secondary">Profile</h4></a></li>
+                    <li class="hover"><a href="#messages"><img class="svg-icons svg-color-200" src="./img/message.svg"></img><h4 class="disappear fs-heading-secondary">Messages</h4></a></li>
+                    <li class="hover"><a href="#history"><img class="svg-icons svg-color-200" src="./img/history.svg"></img><h4 class="disappear fs-heading-secondary">History</h4></a></li>
+                    <li class="hover"><a href="#tasks"><img class="svg-icons svg-color-200" src="./img/tasks.svg"></img><h4 class="disappear fs-heading-secondary">Tasks</h4></a></li>
+                    <li class="hover"><a href="#communities"><img class="svg-icons svg-color-200" src="./img/community.svg"></img><h4 class="disappear fs-heading-secondary">Communities</h4></a></li>
                 </ul>
                 <ul class="secondary-sidebar">
-                    <li><a href="#settings"><img class="svg-icons svg-color-200" src="./img/settings.svg"></img><h4 class="disappear fs-heading-secondary">Settings</h4></a></li>
-                    <li><a href="#support"><img class="svg-icons svg-color-200" src="./img/support.svg"></img><h4 class="disappear fs-heading-secondary">Support</h4></a></li>
-                    <li><a href="#privacy"><img class="svg-icons svg-color-200" src="./img/privacy.svg"></img><h4 class="disappear fs-heading-secondary">Privacy</h4></a></li>
+                    <li class="hover"><a href="#settings"><img class="svg-icons svg-color-200" src="./img/settings.svg"></img><h4 class="disappear fs-heading-secondary">Settings</h4></a></li>
+                    <li class="hover"><a href="#support"><img class="svg-icons svg-color-200" src="./img/support.svg"></img><h4 class="disappear fs-heading-secondary">Support</h4></a></li>
+                    <li class="hover"><a href="#privacy"><img class="svg-icons svg-color-200" src="./img/privacy.svg"></img><h4 class="disappear fs-heading-secondary">Privacy</h4></a></li>
                 </ul>   
             </nav>
 
-            <main>
+            <main class="">
                 <div class="projects-cards">
                     <h2 class="cards-title cards-width">Your Projects</h2>
                     <div class="cards-desk-one">
-                        <div class="cards">
-                            <a href="#"><h4>Super Cool Project</h4></a>
+                        <div class="cards bg-color-10 shadow-box">
+                            <a href="#" class="a-link"><h4>Super Cool Project</h4></a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Duis non dictum urna, sit amet sodales erat. 
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <ul class="link-Cards">
-                                <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
-                                <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
-                                <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                                <li><a href="#favorite"><img class="svg-main svg-icons svg-color-100" src="./img/favorite.svg" alt="favorite"></a></li>
+                                <li><a href="#whatch"><img class="svg-main svg-icons svg-color-100" src="./img/see.svg" alt="watch"></img></a></li>
+                                <li><a href="#share"><img class="svg-main svg-icons svg-color-100" src="./img/share.svg" alt="share"></img></a></li>
                             </ul>
                         </div>
-                        <div class="cards">
-                            <a href="#"><h4>Super Cool Project</h4></a>
+                        <div class="cards bg-color-10 shadow-box">
+                            <a href="#" class="a-link"><h4>Super Cool Project</h4></a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Duis non dictum urna, sit amet sodales erat. 
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <ul class="link-Cards">
-                                <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
-                                <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
-                                <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                                <li><a href="#favorite"><img class="svg-main svg-icons svg-color-100" src="./img/favorite.svg" alt="favorite"></a></li>
+                                <li><a href="#whatch"><img class="svg-main svg-icons svg-color-100" src="./img/see.svg" alt="watch"></img></a></li>
+                                <li><a href="#share"><img class="svg-main svg-icons svg-color-100" src="./img/share.svg" alt="share"></img></a></li>
                             </ul>
                         </div>
-                        <div class="cards">
-                            <a href="#"><h4>Super Cool Project</h4></a>
+                        <div class="cards bg-color-10 shadow-box">
+                            <a href="#" class="a-link"><h4>Super Cool Project</h4></a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Duis non dictum urna, sit amet sodales erat. 
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <ul class="link-Cards">
-                                <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
-                                <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
-                                <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                                <li><a href="#favorite"><img class="svg-main svg-icons svg-color-100" src="./img/favorite.svg" alt="favorite"></a></li>
+                                <li><a href="#whatch"><img class="svg-main svg-icons svg-color-100" src="./img/see.svg" alt="watch"></img></a></li>
+                                <li><a href="#share"><img class="svg-main svg-icons svg-color-100" src="./img/share.svg" alt="share"></img></a></li>
                             </ul>
                         </div>
-                        <div class="cards">
-                            <a href="#"><h4>Super Cool Project</h4></a>
+                        <div class="cards bg-color-10 shadow-box">
+                            <a href="#" class="a-link"><h4>Super Cool Project</h4></a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Duis non dictum urna, sit amet sodales erat. 
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <ul class="link-Cards">
-                                <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
-                                <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
-                                <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                                <li><a href="#favorite"><img class="svg-main svg-icons svg-color-100" src="./img/favorite.svg" alt="favorite"></a></li>
+                                <li><a href="#whatch"><img class="svg-main svg-icons svg-color-100" src="./img/see.svg" alt="watch"></img></a></li>
+                                <li><a href="#share"><img class="svg-main svg-icons svg-color-100" src="./img/share.svg" alt="share"></img></a></li>
                             </ul>
                         </div>
-                        <div class="cards">
-                            <a href="#"><h4>Super Cool Project</h4></a>
+                        <div class="cards bg-color-10 shadow-box">
+                            <a href="#" class="a-link"><h4>Super Cool Project</h4></a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Duis non dictum urna, sit amet sodales erat. 
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <ul class="link-Cards">
-                                <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
-                                <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
-                                <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                                <li><a href="#favorite"><img class="svg-main svg-icons svg-color-100" src="./img/favorite.svg" alt="favorite"></a></li>
+                                <li><a href="#whatch"><img class="svg-main svg-icons svg-color-100" src="./img/see.svg" alt="watch"></img></a></li>
+                                <li><a href="#share"><img class="svg-main svg-icons svg-color-100" src="./img/share.svg" alt="share"></img></a></li>
                             </ul>
                         </div>
-                        <div class="cards">
-                            <a href="#"><h4>Super Cool Project</h4></a>
+                        <div class="cards bg-color-10 shadow-box">
+                            <a href="#" class="a-link"><h4>Super Cool Project</h4></a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Duis non dictum urna, sit amet sodales erat. 
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <ul class="link-Cards">
-                                <li><a href="#favorite"><img class="svg-icons svg-color-200" src="./img/favorite.svg" alt="favorite"></a></li>
-                                <li><a href="#whatch"><img class="svg-icons svg-color-200" src="./img/see.svg" alt="watch"></img></a></li>
-                                <li><a href="#share"><img class="svg-icons svg-color-200" src="./img/share.svg" alt="share"></img></a></li>
+                                <li><a href="#favorite"><img class="svg-main svg-icons svg-color-100" src="./img/favorite.svg" alt="favorite"></a></li>
+                                <li><a href="#whatch"><img class="svg-main svg-icons svg-color-100" src="./img/see.svg" alt="watch"></img></a></li>
+                                <li><a href="#share"><img class="svg-main svg-icons svg-color-100" src="./img/share.svg" alt="share"></img></a></li>
                             </ul>
                         </div>
                     </div>    
@@ -141,18 +141,18 @@
                     <div class="announces-card">
                         <div class="anoncards">
                         <h2 class="cards-title">Announcements</h2>
-                            <div class="A-cards">
+                            <div class="A-cards bg-color-10 shadow-box">
                                 <div class="an-cards">
                                     <h4>Site Maintenance</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                         Duis non dictum urna, sit amet sodales erat.</p>
                                 </div>
-                                <div class="an-cards">
+                                <div class="an-cards bg-color-10">
                                     <h4>Community Share Day</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                         Duis non dictum urna, sit amet sodales erat.</p>
                                 </div>
-                                <div class="an-cards">
+                                <div class="an-cards bg-color-10">
                                     <h4>Updated Privacy Policy</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                         Duis non dictum urna, sit amet sodales erat.</p>
@@ -164,7 +164,7 @@
                     <div class="trending-card">
                         <div class="anoncards">
                             <h2 class="cards-title">Trending</h2>
-                            <div class="T-cards">
+                            <div class="T-cards bg-color-10 shadow-box">
                                 <div class="tren-cards">
                                     <img class="sz-pic-100" src="./img/profilepic.jpg" alt="user profile picture"></img>
                                     <div>
@@ -172,21 +172,21 @@
                                         <p>Mysterious man</p>
                                     </div>
                                 </div>
-                                <div class="tren-cards">
+                                <div class="tren-cards bg-color-10">
                                     <img class="sz-pic-100" src="./img/profilepic.jpg" alt="user profile picture"></img>
                                     <div>
                                         <h5 class="fs-heading">@Wulfis</h5>
                                         <p>Mysterious man</p>
                                     </div>
                                 </div>
-                                <div class="tren-cards">
+                                <div class="tren-cards bg-color-10">
                                     <img class="sz-pic-100" src="./img/profilepic.jpg" alt="user profile picture"></img>
                                     <div>
-                                        <h5 class="fs-heading">@Wulfis</h5>
+                                        <h5 class="fs-heading bg-color-10">@Wulfis</h5>
                                         <p>Mysterious man</p>
                                     </div>
                                 </div>
-                                <div class="tren-cards">
+                                <div class="tren-cards bg-color-10">
                                     <img class="sz-pic-100" src="./img/profilepic.jpg" alt="user profile picture"></img>
                                     <div>
                                         <h5 class="fs-heading">@Wulfis</h5>
