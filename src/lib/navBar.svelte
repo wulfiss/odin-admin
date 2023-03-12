@@ -2,6 +2,7 @@
     import magnify from '$lib/assets/magnify.svg';
     import bellring from '$lib/assets/bellring.svg';
     import profile from '$lib/assets/profile.svg';
+	import { PROCESSOR_IDENTIFIER } from '$env/static/private';
     
     let userPicture:string = profile;
     let userName = 'Default user';
@@ -10,6 +11,22 @@
     if(user){
         userPicture = ' ';
         userName = ' ';
+    }
+
+    let button:any;
+
+    let open:boolean = false;
+    let top:number = 0;
+    let left:number = 0;
+
+    $:if(open){
+        setDropdownPosition();
+    }
+
+    function setDropdownPosition() {
+        const rect = button.getBoundingClientRect()();
+        top = rect.bottom;
+        left = rect.left;
     }
 
 </script>
@@ -22,15 +39,19 @@
     </div>
 
     <div id='notification-container'>
-        <button><img src={bellring} alt="Bellring notification"></button>
+        <button bind:this={button} on:click={() => open = !open}><img src={bellring} alt="Bellring notification"></button>
     </div>
+
 
     <div id="userIDPIC-container">
         <div id='userPic-container'>
             <img src={userPicture} alt="User profile image">
         </div>
-        <div id='userID-container'>
+        <div id='userID-container' class="dropdown">
             <span>{userName}</span>
+            <div class='dropdown-content'>
+                <a href="#">Log out</a>
+            </div>
         </div>
     </div>
 
@@ -46,6 +67,14 @@
         </button>
     </div>
 </nav>
+
+{#if open}
+    <ul class="notiContent" style:top={top} style:left={left}>
+        <li>Notification 1</li>
+        <li>Notification 1</li>
+        <li>Notification 1</li>
+    </ul>
+{/if}
 
 
 <style lang='scss'>
@@ -96,6 +125,20 @@
         }
     }
 
+    .notiContent{
+        position: absolute;
+        display: grid;
+        gap: 0.25rem;
+        margin: 0.5rem 0 0 0.5rem;
+        padding: 0;
+    }
+
+    ul li {
+		padding: 0;
+		text-indent: 0;
+		list-style-type: none;
+	}
+
     div#userPic-container{
         width: 45px;
         margin-top: 2px;
@@ -127,6 +170,27 @@
             height: 30px;
         }
 
+    }
+
+    .dropdown{
+        position: relative;
+        display: inline-block;
+
+        &:hover .dropdown-content{
+            display: block;
+        }
+    }
+
+    .dropdown-content{ 
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+    
+        a{
+            display: block;
+            text-decoration: none;
+        }
     }
 
 </style>
